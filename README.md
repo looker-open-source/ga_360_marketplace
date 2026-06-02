@@ -138,3 +138,8 @@ And add the following constant specification to the existing "manifest.lkml" fil
 ### v. 2.0.x
 
 **NOTE** This block will need to be reinstalled or manually modified if upgrading from v.1.0.x (Older version config project needs to match [https://github.com/looker/block-ga360-config](https://github.com/looker/block-ga360-config)) The easiest way to manually update config is to change the config model name from block_ga360_config.model.lkml to block_google_analytics_360_config.model.lkml
+
+
+---
+
+This is not an officially supported Google product. This project is not eligible for the [Google Open Source Software Vulnerability Rewards Program](https://bughunters.google.com/open-source-security).
