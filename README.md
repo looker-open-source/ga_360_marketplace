@@ -1,5 +1,7 @@
 # Google Analytics 360
 
+This is not an officially supported Google product. This project is not eligible for the [Google Open Source Software Vulnerability Rewards Program](https://bughunters.google.com/open-source-security).
+
 [Jump to Release Notes](#Release)
 
 # What does this Looker Block do for me?
@@ -26,7 +28,6 @@ For more information on Nested Fields, and why Google chooses to use them, pleas
 Google's documentation on the data included in the export can be found [here](https://support.google.com/analytics/answer/3437719?hl=en).
 
 You can also find a cookbook of SQL queries for common questions in [Google's documentation](https://support.google.com/analytics/answer/4419694?hl=en&ref_topic=3416089#query6_SequenceOfHits)
-
 
 # Block Structure
 Core project: block-ga360 is the read-only project where the block’s base Explores, views, and dashboards are defined. The core project’s initial views and Explores are defined in the core project and extended in the config project, where they can be modified. Then the config project and its files are imported into the core project. Finally, the core project defines the block’s content layer, or the dashboards and Explores that are surfaced in the Looker UI.
@@ -78,15 +79,12 @@ Looker will offer an out of the box data action to enable you to push data back 
 
   You can start to create custom dimensions within the GA UI to identify cohorts to retarget via your other GMP products
 
-
 # <a name="Release"></a>Release Notes
-
 
 ### v. 4.0.x
 
 - Optimizes filter suggestions to leverage BQ nested fields
 - Adds commented out examples for multi-property scenarios
-
 
 **NOTE** This block will need to be deleted & reinstalled or updated then manually modified if upgrading from v.3.0.0 or older version (The Config project needs to match  [https://github.com/looker/block-ga360-config](https://github.com/looker/block-ga360-config) , or follow the instructions below).
 
@@ -115,7 +113,6 @@ always_filter: {
 
 - Adds filter constant descriptions
 - Adds edit access to always_filter in "ga_sessions_config" explore
-
 
 **NOTE** This block will need to be deleted & reinstalled or manually modified if upgrading from v.2.0.x or older version (Config project needs to match [https://github.com/looker/block-ga360-config](https://github.com/looker/block-ga360-config)). If not reinstalling, the easiest way to manually update the config is to add the following inside the "ga_sessions_config" explore:
 
